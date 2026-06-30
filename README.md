@@ -6,8 +6,6 @@ This project implements an **8-bit Countdown Timer IP** using the **Advanced Per
 
 The design was verified using **Verilator** and visualized using **GTKWave**.
 
----
-
 ## Features
 
 * APB-compliant Master and Timer Slave
@@ -17,18 +15,12 @@ The design was verified using **Verilator** and visualized using **GTKWave**.
 * Countdown Status Monitoring
 * Functional Verification using Verilator
 
----
-
 ## System Architecture
 ![fig1](image.png)
-
-
----
 
 ## Register Map
 
  ![fig2](image-1.png)                      
----
 
 ## Working Principle
 
@@ -42,8 +34,6 @@ The design was verified using **Verilator** and visualized using **GTKWave**.
    * `running` is cleared to **0**.
    * `timer_done` is asserted to **1**.
 7. The current count and timer status can be read through the APB interface.
-
----
 
 ## APB Transaction Flow
 
@@ -59,7 +49,6 @@ The design was verified using **Verilator** and visualized using **GTKWave**.
 * Access Phase
 * The slave returns the requested register value through `PRDATA`.
 
----
 
 ## Verification
 
@@ -73,17 +62,11 @@ The following functionality was successfully verified:
 * ✔ Read **TIMER_DONE** register
 * ✔ Timer completion detection
 
-
----
-
 ## Tools Used
 
 * Verilog HDL
 * Verilator
 * GTKWave
-
-
----
 
 ## Applications
 
@@ -93,8 +76,6 @@ The following functionality was successfully verified:
 * System-on-Chip (SoC)
 * Programmable Timers
 
----
-
 ## Future Enhancements
 
 * Configurable Timer Width
@@ -102,8 +83,6 @@ The following functionality was successfully verified:
 * Interrupt Generation
 * Prescaler Support
 * Multiple Timer Instances
-
----
 
 ## Conclusion
 
